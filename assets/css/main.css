@@ -1,15 +1,4 @@
-/**
-* Template Name: eStartup
-* Template URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -534,6 +523,16 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Disable photo on mobile devices
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+  .team-photo {
+    height: 250px; /* Menyesuaikan tinggi di layar kecil */
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
 .page-title {
@@ -915,6 +914,20 @@ section,
 .features .feature-box:hover i {
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team-photo {
+  width: 100%;
+  height: 320px; /* Tinggi konsisten */
+  object-fit: cover; 
+  background-color: #f9f9f9; /* Latar belakang netral untuk area kosong */
+  padding: 8px; /* Memberikan jarak di sekeliling gambar */
+  border-radius: 8px; /* Sudut melengkung untuk tampilan modern */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan lembut */
+
 }
 
 /*--------------------------------------------------------------
